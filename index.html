@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="A Javascript compressor.">
+		<meta name="keywords" content="packer,javascript,compressor,obfuscator">
+		<title>A JavaScript Compressor</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Dean Edwards">
+		<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+		<!--[if lt IE 9]><script>"abbr,article,footer,header,nav,section,time".replace(/\w+/g,function(t){document.createElement(t)})</script><![endif]-->
+	</head>
+	<body>
+		<main class="container">
+			<span class="h4 text-center">A JavaScript Compressor.</span>
+			<form id="form" method="post">
+				<p>
+					<label class="paste">Paste:</label>
+					<br>
+					<textarea id="input" name="input" rows="8" spellcheck="false" class="form-control"></textarea>
+				</p>
+				<p id="controls">
+					<label for="base62">
+						Base62 encode
+						<input id="base62" name="base62" value="1" checked="checked" type="checkbox">
+					</label>
+					<br>
+					<label for="shrink">
+						Shrink variables
+						<input id="shrink" name="shrink" value="1" checked="checked" type="checkbox">
+					</label>
+				</p>
+				<p class="form-buttons" id="input-buttons">
+					<button type="button" class="btn btn-primary" id="pack-script">Encode</button>
+				  <button type="button" class="btn btn-warning" id="decode-script">Decode</button>
+					<button type="button" class="btn btn-danger" id="clear-all">Clear</button>
+				</p>
+				<p>
+					<label class="copy">Copy:</label>
+					<br>
+			  	<textarea id="output" name="output" rows="8" readonly="readonly" spellcheck="false" class="form-control"></textarea>
+			  </p>
+				<p id="message"></p>
+				<br>
+			</form>
+		</main>
+		<script src="asset/js/my.js"></script>
+		<script src="asset/js/packer.js"></script>
+		<script src="asset/js/words.js"></script>
+		<script src="asset/js/beautify.js"></script>
+		<script src="asset/js/bindings.js"></script>
+	</body>
+</html>
