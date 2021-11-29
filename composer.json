@@ -1,0 +1,14 @@
+{
+    "name": "utqinadhif/packer",
+    "description": "to encode and decode js",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "utqinadhif",
+            "email": "nadhifbeo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
