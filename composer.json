@@ -9,6 +9,6 @@
             "email": "nadhifbeo@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0.0",
     "require": {}
 }
